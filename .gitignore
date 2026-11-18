@@ -1,0 +1,34 @@
+# SanDisk firmware and anything extracted from it: never commit
+*.hex
+*.afi
+*.FW
+out/
+out116/
+fw116/
+check/
+
+# third-party source trees used for reference
+rb/
+
+# build products
+*.o
+*.elf
+*.bin
+*.lst
+*.dSYM/
+programs/host_raiders
+programs/host_frames/
+programs/preview_test/
+programs/src/
+__pycache__/
+
+# local previews / scratch
+*.png
+*.pbm
+.DS_Store
+
+# docs images are committed
+!docs/images/*.png
+
+# archived stock firmware is committed on purpose
+!firmware/*/upgrade.hex
